@@ -1,9 +1,9 @@
 import requests,scratchapi,os,time
-s = scratchapi.ScratchUserSession('USERNAME',str(PASSWORD)) #PUT STUFF HERE
+s = scratchapi.ScratchUserSession('scraatchcgn_',str(Scratchez123)) #PUT STUFF HERE
 project_id = str(PROJECTIDHERE) #PUT STUFF HERE
 def users():
   #vname = f'☁ follow'
-  text = requests.get(f'https://clouddata.scratch.mit.edu/logs?projectid={project_id}&limit=1000000000&offset=0').json()
+  text = requests.get(f'https://clouddata.scratch.mit.edu/logs?projectid={project_id}&limit=100&offset=0').json()
   retlist = []
   for i in text:
     retlist.append(i['user'])
